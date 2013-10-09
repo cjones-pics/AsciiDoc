@@ -1,7 +1,7 @@
 <snippet>
    <description>AsciiDoc Article Start</description>
    <content><![CDATA[${1:Title}
-${1/./-/g}
+${1/./=/g}
 $TM_FULLNAME <$TM_EMAIL>
 v1.0, $TM_YEAR
 :copyright: (c) $TM_ORGANIZATION_NAME, $TM_YEAR. All rights Reserved.
