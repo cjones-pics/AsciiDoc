@@ -37,6 +37,15 @@ The Article snippet refers to certain variables that are styled after the TextMa
 3. Update the defintion of TM_YEAR (currently 2013) if necessary.
 4. Test the Article snippet (create a new AsciiDoc file, type "ar" and hit Tab).
 
+Configure the AsciiDoc Build System
+-----------------------------------
+Sublime has a build system for compiling source code, in this case, AsciiDoc source. A file called asciidoc.sublime-build is provided here to allow you to take advantage of the build system, but it needs to be told where you have installed Python and AsciiDoc:
+
+1. Edit asciidoc.sublime-build
+2. Change the working_dir from "/path/to/asciidoc-8.6.8" to the actual location where you have AsciiDoc installed (e.g. "C:\\prgs\\asciidoc-8.6.8")
+3. Change the first parameter of cmd from "/path/to/python" to actual name and location of your Python engine (e.g. "C:\\Python27\\python.exe")
+4. Note: See below about ctrl+b no longer being the shortcut key for the buld system.
+
 Usage
 -----
  - Create a new file, save it as `<filename>.asc`
@@ -81,7 +90,7 @@ Enhancements
 Following are planned enhancements for the package:
 
  - <strike>Add keyboard shortcuts for various commands such bold text, italics, blocks etc.</strike>
- - Adding Build system to preview as HTML or PDF.
+ - <strike>Adding Build system to preview as HTML or PDF</strike>.
                                                    
 Your suggestions are welcome.       
 

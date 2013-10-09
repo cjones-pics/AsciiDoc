@@ -1,0 +1,6 @@
+{
+	"working_dir": "C:\\prgs\\asciidoc-8.6.8",
+	"cmd": ["C:\\Python27\\python.exe", "asciidoc.py", "$file"],
+	"selector": "text.html.asciidoc",
+	"shell":true
+}
