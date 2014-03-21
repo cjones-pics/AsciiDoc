@@ -1,6 +1,11 @@
 {
-	"working_dir": "/path/to/asciidoc-8.6.8",
-	"cmd": ["/path/to/python", "asciidoc.py", "$file"],
+	"cmd": ["cd $file_path;asciidoc $file_name"],
 	"selector": "text.html.asciidoc",
-	"shell":true
+
+	"windows":{
+		"working_dir": "c:\\cygwin64\\bin",
+		"cmd": ["c:\\cygwin64\\bin\\bash.exe","--login","-c","cd '$file_path';asciidoc $file_name"],
+		"path":"c:\\cygwin64\\bin",
+		"shell":true
+	}
 }
